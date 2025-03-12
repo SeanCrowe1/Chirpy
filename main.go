@@ -11,7 +11,6 @@ func main() {
 	server.Addr = ":8080"
 	server.Handler = serveMux
 
-	server.ListenAndServe()
 	if err := server.ListenAndServe(); err != nil {
 		fmt.Println(err)
 	}
